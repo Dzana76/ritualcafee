@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ritual Coffee & Restaurant Zenica</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+header{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    max-width:700px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#c59d5f;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+    color:#c59d5f;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+}
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1b1b1b;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#c59d5f;
+    margin-bottom:15px;
+}
+
+.contact{
+    text-align:center;
+}
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:25px;
+    color:#aaa;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="hero">
+        <h1>Ritual Coffee & Restaurant</h1>
+        <p>
+            Mjesto gdje se vrhunska kafa, ukusna hrana i ugodna atmosfera
+            spajaju u jedinstveno iskustvo u srcu Zenice.
+        </p>
+        <a href="#menu" class="btn">Pogledaj meni</a>
+    </div>
+</header>
+
+<section>
+    <h2 class="section-title">O nama</h2>
+
+    <div class="about">
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9" alt="Restaurant">
+
+        <div>
+            <h3>Dobrodošli u Ritual</h3>
+            <p>
+                Uživajte u pažljivo pripremljenim specijalitetima,
+                vrhunskoj kafi, doručku, burgerima, tjesteninama,
+                salatama i desertima. Naš cilj je pružiti nezaboravno
+                gastronomsko iskustvo u modernom i elegantnom ambijentu.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="menu">
+    <h2 class="section-title">Naša ponuda</h2>
+
+    <div class="menu-grid">
+
+        <div class="card">
+            <h3>☕ Kafa</h3>
+            <p>Espresso, Cappuccino, Latte i specijalne kafe.</p>
+        </div>
+
+        <div class="card">
+            <h3>🍳 Doručak</h3>
+            <p>Svjež i ukusan početak dana.</p>
+        </div>
+
+        <div class="card">
+            <h3>🍔 Burgeri</h3>
+            <p>Sočni burgeri pripremljeni od kvalitetnih sastojaka.</p>
+        </div>
+
+        <div class="card">
+            <h3>🍝 Tjestenine</h3>
+            <p>Kremaste i bogate kombinacije okusa.</p>
+        </div>
+
+        <div class="card">
+            <h3>🥗 Salate</h3>
+            <p>Svježe i zdrave opcije za svaki ukus.</p>
+        </div>
+
+        <div class="card">
+            <h3>🍰 Deserti</h3>
+            <p>Slatki završetak svakog obroka.</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Kontakt</h2>
+
+    <div class="contact">
+        <p>📍 Dr. Safvet-bega Bašagića 5, Zenica</p>
+        <p>📞 +387 62 721 346</p>
+        <p>🕒 Pon - Sub: 07:00 - 23:00</p>
+        <p>🕒 Nedjelja: 08:00 - 23:00</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Ritual Coffee & Restaurant Zenica. Sva prava zadržana.
+</footer>
+
+</body>
+</html>
